@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import './GamifiedPortfolio.css';
 
@@ -138,7 +138,7 @@ export default function GamifiedPortfolio() {
   
   const audioRef = useRef(null);
 
-  const playSound = () => {
+  const playSound = useCallback(() => {
     if (audioRef.current) {
       audioRef.current.pause();              // Stop any previous playback
       audioRef.current.currentTime = 0;      // Reset to beginning
@@ -154,26 +154,27 @@ export default function GamifiedPortfolio() {
         }
       }, 1600); // Match this to car animation duration
     }
-  };
+  }, []);
+  
   
   
 
-  const nextSection = () => {
+  const nextSection = useCallback(() => {
     setPosition((prev) => {
       const next = Math.min(prev + 1, sections.length - 1);
       if (next !== prev) playSound();
       return next;
     });
-  };
+  }, [playSound]);
   
-
-  const prevSection = () => {
+  const prevSection = useCallback(() => {
     setPosition((prev) => {
       const next = Math.max(prev - 1, 0);
       if (next !== prev) playSound();
       return next;
     });
-  };
+  }, [playSound]);
+  
   
 
   useEffect(() => {
@@ -181,11 +182,14 @@ export default function GamifiedPortfolio() {
       if (e.key === 'ArrowRight') nextSection();
       else if (e.key === 'ArrowLeft') prevSection();
     };
+  
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [nextSection, prevSection]);
 
   const currentSection = sections[position];
+  
+
 
   return (
     <div className="portfolio-container">
