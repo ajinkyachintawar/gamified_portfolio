@@ -517,8 +517,11 @@ body {
     }
   
     .contact-section a {
-      word-wrap: break-word;
+      display: inline-block;
+      max-width: 100%;
+      overflow-wrap: break-word;
     }
+    
   
   
     /* Footer */
