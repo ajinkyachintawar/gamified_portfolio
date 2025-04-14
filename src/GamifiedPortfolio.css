@@ -509,30 +509,28 @@ body {
     .contact-section {
       text-align: center;
       padding: 1rem;
-      font-size: 0.95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  
+    .contact-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      font-size: 1rem;
+      color: #eee;
     }
-    
-    .contact-section p {
-      margin: 0.5rem 0;
-      width: 100%;
-    }
-    
-    .contact-section a {
-      display: inline-block;
-      max-width: 100%;
+  
+    .contact-item a {
+      color: #4fc3f7;
+      text-decoration: none;
       word-break: break-word;
     }
-    
-    .contact-section span {
-      display: block;
-      margin-bottom: 0.3rem;
+  
+    .contact-item a:hover {
+      text-decoration: underline;
     }
-    
-    
   
   
     /* Footer */
