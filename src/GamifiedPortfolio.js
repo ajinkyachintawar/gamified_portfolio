@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Car } from 'lucide-react';
 import './GamifiedPortfolio.css';
 
 const projects = [
@@ -184,7 +183,7 @@ export default function GamifiedPortfolio() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [nextSection, prevSection]);
 
   const currentSection = sections[position];
 
