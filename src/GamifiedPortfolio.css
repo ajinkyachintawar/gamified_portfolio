@@ -510,17 +510,28 @@ body {
       text-align: center;
       padding: 1rem;
       font-size: 0.95rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-  
+    
     .contact-section p {
-      margin-bottom: 0.75rem;
+      margin: 0.5rem 0;
+      width: 100%;
     }
-  
+    
     .contact-section a {
       display: inline-block;
       max-width: 100%;
-      overflow-wrap: break-word;
+      word-break: break-word;
     }
+    
+    .contact-section span {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    
     
   
   
