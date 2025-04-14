@@ -490,13 +490,20 @@ body {
     }
   
     /* Resume and Contact */
+    .resume-section {
+      text-align: center;
+      padding: 1rem;
+    }
+  
     .resume-buttons {
       flex-direction: column;
-      gap: 0.75rem;
+      align-items: center;
     }
   
     .resume-buttons a {
-      width: 100%;
+      width: 60%;
+      padding: 0.6rem;
+      font-size: 0.95rem;
     }
   
     .contact-section {

@@ -125,12 +125,15 @@ const sections = [
     title: '📬 Contact',
     content: (
       <div className="contact-section">
-        <p>Email: <a href="mailto:chintawarajinkya@gmail.com">chintawarajinkya@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ajinkya-chintawar" target="_blank" rel="noopener noreferrer">linkedin.com/in/ajinkya-chintawar</a></p>
-        <p>GitHub: <a href="https://github.com/ajinkyachintawar" target="_blank" rel="noopener noreferrer">github.com/ajinkyachintawar</a></p>
+        <p>📧 Email: <a href="mailto:ajinkyachintawar12@gmail.com">ajinkyachintawar12@gmail.com</a></p>
+        <p>📱 Phone (IE): <a href="tel:+353894911696">+353 89 491 1696</a></p>
+        <p>📞 Phone (IN): <a href="tel:+917219578150">+91 72195 78150</a></p>
+        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/ajinkya-chintawar" target="_blank" rel="noopener noreferrer">linkedin.com/in/ajinkya-chintawar</a></p>
+        <p>👨‍💻 GitHub: <a href="https://github.com/ajinkyachintawar" target="_blank" rel="noopener noreferrer">github.com/ajinkyachintawar</a></p>
       </div>
     )
   }
+  
 ];
 
 export default function GamifiedPortfolio() {
