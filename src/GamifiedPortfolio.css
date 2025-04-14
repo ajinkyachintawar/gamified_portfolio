@@ -428,7 +428,7 @@ body {
     }
   
     .track-item h2 {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
     }
   
     .custom-car-icon {
@@ -508,7 +508,18 @@ body {
   
     .contact-section {
       text-align: center;
+      padding: 1rem;
+      font-size: 0.95rem;
     }
+  
+    .contact-section p {
+      margin-bottom: 0.75rem;
+    }
+  
+    .contact-section a {
+      word-wrap: break-word;
+    }
+  
   
     /* Footer */
     .footer {
