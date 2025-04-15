@@ -216,7 +216,7 @@ export default function GamifiedPortfolio() {
 
   return (
     <div className="portfolio-container">
-      <h1 className="portfolio-title">Ajinkya Chintawar | Data Analyst & ML Developer 🚗</h1>
+      <h1 className="portfolio-title">Ajinkya Chintawar | Data Analyst & ML Developer</h1>
       <audio ref={audioRef} src="/nitro-sound.mp3" preload="auto" />
   
       {/* Track */}
